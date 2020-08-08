@@ -14,44 +14,40 @@
 
 ### Requirements
 
-This repo works in python 3 and in order to run the scripts you need to install the required python libraries.
-You can run the following command:
+This projects requires python3. The packages used can be found the requirements.txt file and installed by running:
 
 `pip3 install -r requirements.txt`
 
 ### Refitting the model
 
-In order to refit (or fitting for the first time), you need to run the following commands:
+All the models in the project are already trained before uploading. This was done to save time during the testing and demo phase. If refitting the models is necessery run:
 
 `python main.py 1`
 
-After a while, the models folder will contain the updated files of the model.
+The training process takes almost 2 hours. 
 
 ### Running the microservice
 
-In order to run the main.py file you don't have to specify any keywords. 
-If you need to change the endpoint and port of the model, you can find their setting
-in the `configs` folder. Example of running the microservice:
+In order to start the server and loading the models run:
 
 `python main.py`
 
-Once the microservice is up, it will open automatically a web page, at specified host and port,
-where you can upload the `dataset_sample.csv` file, located in the `data` folder.
+Once the microservice is online, it will open automatically a web page, at specified host and port,
+where you can upload the `dataset_sample.csv` file, located in the `data` folder. 
 
-Once the prediction pipeline has finished it's job, you will be able to see a link on the web page
-where you can download the `Predictions.csv` file. 
+The upload will return an HTML table with the results. 
+
+
 
 ## Must read
 
-In order to make the pipeline working, you have to save the `dataset_sample.csv` in the `data`
-folder with the following columns (order not important):
+In order to refit the model you need to extract the content of the following file in the main folder. 
+- `mallet-2.0.8.zip`
+- `glove.zip`
 
 
 
 
-
-In case the categorical features don't match the accepted values, their values
-must be replaced with the most similar ones provided above.
 
 
 
