@@ -55,7 +55,7 @@ class Microservice(object):
                 )
                 output['labels'] = (predictions)
                 real = output[output['labels'] == 0]
-                # real['Summary'] = real['text'].apply(lambda x: Ner.summary(x))
+                real['Summary'] = real['text'].apply(lambda x: Ner.summary(x))
                 real['Key People'] = real['text'].apply(lambda x: Ner.get_people(x))
                 real['Key Org'] = real['text'].apply(lambda x: Ner.get_org(x))
                 predictionstopic = self.tc.serve_predictions(real)

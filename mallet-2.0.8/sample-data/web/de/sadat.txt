@@ -1,1 +1,3 @@
-Muhammad Anwar as-Sadat, arabisch محمد أنور السادات‎, DMG Muhammad Anwar as-Sādāt, (* 25. Dezember 1918 in Mit Abul-kum, einem Dorf im Nildelta; † 6. Oktober 1981 in Kairo) war ein ägyptischer Staatsmann. Neben Nasser und anderen war er Mitgründer des Geheimbunds der Freien Offiziere, seit dem Staatsstreich 1952 bekleidete er hohe Ämter. Als Nachfolger Nassers wurde er 1970 Staatspräsident. Sadat führte Ägypten in den Jom-Kippur-Krieg 1973, löste das Land aus der engen Bindung an die Sowjetunion und schloss 1979 Frieden mit Israel. Für seine Bemühungen im Friedensprozess mit Israel erhielt er zusammen mit Menachem Begin 1978 den Friedensnobelpreis. Sadat fiel einem Attentat zum Opfer, das Gegner seiner Politik der Aussöhnung mit Israel verübten.
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd92900b97f9bde8ce67598a0920573f31c1c94b8e2b1c67f4788ac577a2e358
+size 788

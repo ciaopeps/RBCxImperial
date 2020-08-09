@@ -1,22 +1,3 @@
-numpy
-pandas
-scipy
-scikit-learn
-pyramid
-formencode
-keras
-tensorflow
-beautifulsoup
-wsgiref
-json
-os
-webbrowser
-sys
-warnings
-urllib
-gensim
-spacy
-tensorflow
-pickle
-transformers
-torch
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd72b536c05b625c239f1e3b115379e7fad84ee3799c4f818077a460f14cfe4f
+size 179
