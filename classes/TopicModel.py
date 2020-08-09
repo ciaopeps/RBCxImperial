@@ -18,7 +18,7 @@ class TopicModel(object):
     def __init__(self):
         self.mallet_path = '/Users/pietroaluffi/PycharmProjects/RBCxImperial/mallet-2.0.8/bin/mallet'
 
-        self.df = pd.read_csv('data/dataset.csv')
+
 
         self.callback_list = [
             EarlyStopping(  # Interrupt the training when there is no more improvement
@@ -151,6 +151,7 @@ class TopicModel(object):
         return self
 
     def fit(self):
+
         self.get_labels()
         self.tokenizer()
 
@@ -206,6 +207,7 @@ class TopicModel(object):
         return predictions
 
     def run(self):
+        self.df = pd.read_csv('data/dataset.csv')
         self.lda_df()
         self.lda_model()
         self.get_topic_df()
