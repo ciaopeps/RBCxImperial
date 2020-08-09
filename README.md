@@ -4,7 +4,7 @@
 
 - `classes`: this folder contains the classes used by the program
 - `configs`: configurations files for the API request
-- `data`: unzip the content data.zip file into 
+- `data`: CSV files witht the dataset. True.csv and Fake.csv are the original datasets. dataset.csv and sample_dataset.csv are obtained after preprocessing. Use sample_dataset.csv to test the system 
 - `local`: uploading html page
 - `topic_model`: topic classifier pretrained model
 - `fake_news_model`: fake news classifier pretrained model
@@ -40,10 +40,6 @@ The upload will return an HTML table with the results.
 
 
 ## Must read
-
-In order to refit the model you need to extract the content of the following file in the main folder. 
-- `mallet-2.0.8.zip`
-- `glove.zip`
 
 
 
