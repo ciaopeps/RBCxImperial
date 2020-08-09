@@ -201,7 +201,7 @@ class TopicModel(object):
         self.load_all()
         self.transform(new_X)
         predictions = self.model.predict(self.datatest)
-        topics = np.array(['World Politics', 'Middle East', 'Other', 'Election Ivestigation', 'Elections','Europe','US Politics','US Protests'])
+        topics = np.array(['US Politics', 'Us News', 'Election Investigation', 'Elections', 'Middle East','Middle East','World News','Europe'])
         predictions = topics[np.argmax(predictions, axis=1).reshape(-1)]
         print('log:: Predictions obtained')
         return predictions
