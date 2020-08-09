@@ -15,7 +15,6 @@ import sys
 import pandas as pd
 from bs4 import BeautifulSoup
 import warnings
-
 warnings.filterwarnings("ignore")
 
 params = json.load(open(os.path.join('./configs', 'serviceconfigs.json'), 'r'))
