@@ -43,7 +43,9 @@ The upload will return an HTML table with the results.
 # Must read
 Make sure to run and install all requirements and the following command:
 
-python3 -m spacy download it_core_news_lg 
+`python3 -m spacy download it_core_news_lg `
+
+Big files such as _glove.txt_, _Real.csv_, _Fake.csv_ and _dataset.csv_ need to be extracted after downloading the repo. 
 
 
 
