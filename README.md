@@ -11,6 +11,7 @@
 - `main.py`: main python file to launch for both training and inference
 - `requirements.txt`: required packages to run the program 
 - `tokenizer`: tokenizer embeddings for both fake news and topic classifier
+- `imperialXrbc.ipynb`: Google Colab notebook with the project Proof of Concept
 
 ### Requirements
 
@@ -39,8 +40,10 @@ The upload will return an HTML table with the results.
 
 
 
-## Must read
+# Must read
+Make sure to run and install all requirements and the following command:
 
+python3 -m spacy download it_core_news_lg 
 
 
 
