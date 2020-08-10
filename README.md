@@ -13,6 +13,7 @@
 - `tokenizer`: tokenizer embeddings for both fake news and topic classifier
 - `imperialXrbc.ipynb`: Google Colab notebook with the project Proof of Concept
 - `TASKB_REPORT.pdf`: report with the description of the work and the reasoning behind TaskB
+- `Past Projects`: notebooks of completed and on-going projects
 
 ### Requirements
 
