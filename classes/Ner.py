@@ -1,9 +1,9 @@
 from collections import Counter
-import en_core_web_sm
+import en_core_web_lg
 import torch
 from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config
 
-nlp = en_core_web_sm.load()
+nlp = en_core_web_lg.load()
 
 
 class Ner(object):

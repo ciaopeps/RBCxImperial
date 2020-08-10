@@ -23,7 +23,7 @@ port = int(params.get('port', 5000))
 
 
 # Define the microservice class
-@view_config(route_name="/DefaultDetection")
+@view_config(route_name="/RBCxImperial")
 class Microservice(object):
 
     def __init__(self, request):
@@ -76,32 +76,22 @@ class Microservice(object):
 if __name__ == '__main__':
 
     if len(sys.argv) > 1:
-        # pp = Preprocessing()
-        # dataset, dataset_sample = pp.extract()
+        pp = Preprocessing()
+        dataset, dataset_sample = pp.extract()
         dataset = pd.read_csv('data/dataset.csv')
         dataset_sample = pd.read_csv('data/dataset_sample.csv')
         cm = ClassifierModel()
         tc = TopicModel()
         ner = Ner()
-        # cm.fit(dataset)
+        cm.fit(dataset)
         tc.run()
-        # output = dataset_sample.drop(
-        #     columns=['real','fake']
-        # )
-        # output['labels'] = (predictionsfake)
-        # real = output[output['labels']== 0]
-        # real['Summary'] = real['text'].apply(lambda x: Ner.summary(x))
-        # real['Key People'] = real['text'].apply(lambda x: Ner.get_people(x))
-        # real['Key Org'] = real['text'].apply(lambda x: Ner.get_org(x))
-        # print(real.head())
-        # output.to_csv('data/output.csv',)
-        # real.to_csv('data/real.csv', )
+
     else:
 
         with Configurator() as config:
             config.add_static_view('main/', './data')
-            config.add_view(Microservice, route_name="DefaultDetection")
-            config.add_route("DefaultDetection", '/DefaultDetection')
+            config.add_view(Microservice, route_name="RBCxImperial")
+            config.add_route("RBCxImperial", '/RBCxImperial')
             app = config.make_wsgi_app()
 
         print('log:: Starting the microservice...')
@@ -109,7 +99,7 @@ if __name__ == '__main__':
 
         server = make_server(host, port, app)
 
-        webbrowser.open('http://' + host + ':' + str(port) + '/DefaultDetection', new=2)
+        webbrowser.open('http://' + host + ':' + str(port) + '/RBCxImperial', new=2)
 
         server.serve_forever()
 

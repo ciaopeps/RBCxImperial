@@ -16,6 +16,7 @@ class Preprocessing(object):
     @staticmethod
     def mining(real):
         # removing publisher
+        real = real.drop_duplicates(['text'])
         texts = real.text
         articles = []
         for text in texts:
