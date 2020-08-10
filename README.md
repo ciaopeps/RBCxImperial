@@ -12,6 +12,7 @@
 - `requirements.txt`: required packages to run the program 
 - `tokenizer`: tokenizer embeddings for both fake news and topic classifier
 - `imperialXrbc.ipynb`: Google Colab notebook with the project Proof of Concept
+- `TASKB_REPORT.pdf`: report with the description of the work and the reasoning behind TaskB
 
 ### Requirements
 
